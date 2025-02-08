@@ -1,0 +1,16 @@
+imgmount e C:/MTI1.iso -t iso
+imgmount f C:/MTI2.iso -t iso
+imgmount g C:/MTI3.iso -t iso
+
+SET SOUND=C:\SB16
+SET BLASTER=A220 I7 D1 H5 P330 T6
+SET MIDI=SYNTH:1 MAP:E
+SET TEMP=C:\WINDOWS\TEMP
+
+C:\SB16\DIAGNOSE /S
+C:\SB16\MIXERSET /P /Q
+C:\WINDOWS\SMARTDRV.EXE
+
+PATH C:\ACTIVISN\MTI
+
+windows\win /b TREASURE
